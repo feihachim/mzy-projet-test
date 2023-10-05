@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,input[type=submit]{
+  font-family: 'Pixelify Sans', cursive;
+}
+
+h1{
+  font-family: 'Lexend', sans-serif;
+}
+
+label{
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #830b9d;
+}
+
+nav {
+  width: 100vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header,footer{
+  background-color: #500f77;
+}
+
+label,.submit-button,h1{
+  color:color-mix(in srgb, #24c652, #accc6c);
+}
+
+a{
+  color: color-mix(in srgb, #24c652, #accc6c);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover{
+  color:color-mix(in srgb, #24c652, #fcfcfc);
+  text-decoration: underline color-mix(in srgb, #24c652, #fcfcfc) 2px;
+}
+
+a:active{
+  color:color-mix(in srgb, #24c652, #fcfcfc);
+}
+
+main {
+  flex-grow: 1;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  width: 100vw;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.nav-logo {
+  width: 25px;
+  height: auto;
+}
+
+h1{
+  font-size: 64px;
+}
+
+.connexion-form{
+  width:60vw;
+  height:50vh;
+  display:flex;
+}
+
+.connexion-form form{
+  width:30vw;
+  height:50vh;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  background-color: #4f1e75;
+}
+
+.connexion-form img{
+  width:30vw;
+  height:50vh;
+  background-size: cover;
+}
+
+label{
+  width:120px;
+  font-size: 16px;
+}
+
+.submit-button,.inscription-link{
+  font-size: 20px;
+}
+
+form div{
+  display: flex;
+  column-gap: 10px;
+}
+
+form div:last-child{
+  align-items: center;
+}
+
+.submit-button,.inscription-link{
+  width:218px;
+  height:32px;
+  border-radius: 10px;
+}
+
+.submit-button{ 
+  background-color: #3b115d;
+}
+
+.inscription-link{
+  text-align: center;
+  vertical-align:baseline;
+}
+
+.inscription-link,#connexion-nom,#connexion-password{
+  background-color: #8918ce;
+  color:color-mix(in srgb, #24c652, #accc6c);
+}
+
+#connexion-nom,#connexion-password{
+  width:218px;
+  height:32px;
+  border-radius: 10px;
+}
+
+input[type=checkbox]{
+  width:20px;
+  height:20px;
+  accent-color: #8918ce;
+}
