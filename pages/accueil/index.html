@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Pixelify+Sans&family=Poppins&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend&family=Pixelify+Sans&family=Poppins&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
         <title>Accueil </title>
     </head>
@@ -20,13 +22,13 @@
                                 alt="logo navigation">
                         </a>
                     </li>
-                    <li><a href="../accueil/index.html">Accueil</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
                 </ul>
                 <ul>
-                    <li><a href="../connexion/index.html">Se connecter</a></li>
-                    <li><a href="../inscription/index.html">S'inscrire</a></li>
-                    <li><a href="../contact/index.html">Contact</a></li>
-                    <li><a href="../tendance/index.html">Tendance</a></li>
+                    <li><a href="#connexion">Se connecter</a></li>
+                    <li><a href="#inscription">S'inscrire</a></li>
+                    <li><a href="#tendance">Tendance</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,28 +36,132 @@
             <section id="accueil">
                 <h1>Mood Delivery</h1>
                 <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Voluptatem tenetur harum quo placeat! Eius aperiam, tenetur exercitationem animi laborum commodi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatem tenetur harum quo placeat! Eius aperiam, tenetur
+                    exercitationem animi laborum commodi.
                 </h2>
                 <div>
                     <a href="../questionnaire/index.html">Questionnaire</a>
                     <a href="../nuage-idees/index.html">Nuage d'idées</a>
                 </div>
-                <article>
-                    <h2></h2>
-                    <p></p>
-                    <img src="" alt="">
-                </article>
-                <article>
-                    <h2></h2>
-                    <p></p>
-                    <img src="" alt="">
-                </article>
-                <article>
-                    <h2></h2>
-                    <p></p>
-                    <img src="" alt="">
-                </article>
+            </section>
+            <section id="connexion">
+                <h1>Connexion</h1>
+                <div class="connexion-form">
+                    <div>
+                        <img
+                            src="../../assets/images/neom-r4ZSR0cKJw8-unsplash.jpg"
+                            alt="NEOM">
+                    </div>
+                    <form id="connexion-form" action="#">
+                        <div>
+                            <label for="connexion-nom">Username</label>
+                            <input type="text" name="connexion-nom"
+                                id="connexion-nom">
+                        </div>
+                        <div>
+                            <label for="connexion-password">Mot de passe</label>
+                            <input type="password" name="connexion-password"
+                                id="connexion-password">
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="connexion-remember"
+                                    id="connexion-remember">
+                                <label class="remember-label"
+                                    for="connexion-remember">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="#">Mot de passe oublié</a>
+                            </div>
+                        </div>
+                        <input class="submit-button" type="submit"
+                            value="Se connecter">
+                        <a class="inscription-link"
+                            href="../inscription/index.html">S'inscrire</a>
+                    </form>
+                </div>
+            </section>
+            <section id="inscription">
+                <h1>Inscription</h1>
+                <div class="inscription-form">
+                    <form id="inscription-form" action="#">
+                        <div>
+                            <label for="inscription-nom">Username</label>
+                            <input type="text" name="inscription-nom"
+                                id="inscription-nom">
+                        </div>
+                        <div>
+                            <label for="inscription-mail">Email</label>
+                            <input type="email" name="inscription-mail"
+                                id="inscription-mail">
+                        </div>
+                        <div>
+                            <label for="inscription-password">Mot de passe</label>
+                            <input type="password" name="inscription-password"
+                                id="inscription-password">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="inscription-condition"
+                                id="inscription-condition">
+                            <label class="condition-label"
+                                for="inscription-condition">J'accepte les
+                                conditions d'utilisation</label>
+                        </div>
+                        <div>
+                            <input type="submit" class="submit-button"
+                                value="S'inscrire">
+                            <a class="connexion-link"
+                                href="../connexion/index.html">Se connecter</a>
+                        </div>
+                    </form>
+                    <div>
+                        <img
+                            src="../../assets/images/neom-r4ZSR0cKJw8-unsplash.jpg"
+                            alt="NEOM creator">
+                    </div>
+                </div>
+            </section>
+            <section id="tendance">
+                <h1>Tendance</h1>
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+                <div class="contact-form">
+                    <form id="contact-form" action="#">
+                        <div>
+                            <label for="contact-nom">Nom</label>
+                            <input type="text" name="contact-nom"
+                                id="contact-nom">
+                        </div>
+                        <div>
+                            <label for="contact-mail">Email</label>
+                            <input type="email" name="contact-mail"
+                                id="contact-mail">
+                        </div>
+                        <div>
+                            <label for="contact-sujet">Sujet</label>
+                            <select name="contact-sujet" id="contact-sujet">
+                                <option value>Choisissez une option</option>
+                                <option value="alpha">Alpha</option>
+                                <option value="beta">Beta</option>
+                                <option value="gamma">Gamma</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="contact-boite">Boîte</label>
+                            <textarea name="contact-boite" id="contact-boite"
+                                cols="26" rows="10"></textarea>
+                        </div>
+                        <input class="submit-button" type="submit"
+                            value="Envoyer">
+                    </form>
+                    <div>
+                        <img
+                            src="../../assets/images/neom-r4ZSR0cKJw8-unsplash.jpg"
+                            alt="NEOM creator">
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
