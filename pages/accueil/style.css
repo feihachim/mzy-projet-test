@@ -25,7 +25,8 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #830b9d;
+  background-image: url("../../assets/images/imagefond.png");
+  background-size: cover;
 }
 
 nav {
@@ -41,7 +42,7 @@ nav {
 }
 
 header,
-footer {
+footer,nav {
   background-color: #500f77;
 }
 
