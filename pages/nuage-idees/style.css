@@ -90,4 +90,115 @@ section {
 
 h1{
   font-size: 64px;
+  color:white;
+}
+
+.genre-button{
+  background-color: #d9d9d9;
+  color:#131313;
+  font-size: 20px;
+  width:184px;
+  height:31px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.genre-button,.choice-button{
+  font-family: "Pixelify Sans", cursive;
+}
+
+.genre-button:hover{
+  text-decoration: underline #131313 1px;
+}
+
+.genre-button:active{
+  background-color: #131313;
+  color: #d9d9d9;
+}
+
+.choice-button{
+  width:184px;
+  height:30px;
+  background-color: #4f1e75;
+  color:white;
+  border-radius: 10px;
+}
+
+h1{
+  width: 80vw;
+  text-align: center;
+}
+
+h3{
+  font-family: "Lexend", sans-serif;
+  font-size: 32px;
+  color:color-mix(in srgb, #24c652, #accc6c);
+  text-align: center;
+}
+
+.genre-list{
+  width:80vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.no-result{
+  width:60vw;
+  height:60vh;
+}
+
+.no-result img{
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.single-result{
+  width:60vw;
+  height:60vh;
+  display: flex;
+  
+}
+
+.left-side,.right-side{
+  width:30vw;
+  height:60vh;
+}
+
+.left-side img{
+  width:100%;
+  height:100%;
+  background-size: cover;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-list{
+  width:300px;
+  height:450px;
+}
+
+.item-list img{
+  width:300px;
+  height:350px;
+  background-size: cover;
+}
+
+.movie-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:20px 20px;
+  width:80vw;
 }
