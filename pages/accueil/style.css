@@ -13,7 +13,7 @@ input[type="submit"] {
   font-family: "Pixelify Sans", cursive;
 }
 
-h1 {
+h1,h2 {
   font-family: "Lexend", sans-serif;
 }
 
@@ -379,6 +379,6 @@ textarea {
   font-family: "Pixelify Sans", cursive;
 }
 
-.contact-subtitle{
+h2{
   color: color-mix(in srgb, #24c652, #accc6c);
 }
