@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend&family=Pixelify+Sans&family=Poppins&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./style.css">
+    <title>Formulaires</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img class="nav-logo"
+                            src="../../assets/images/LogoF.png"
+                            alt="logo navigation">
+                    </a>
+                </li>
+                <li><a href="../accueil/index.html">Accueil</a></li>
+            </ul>
+            <ul>
+                <li><a href="#connexion">Se connecter</a></li>
+                <li><a href="#inscription">S'inscrire</a></li>
+                <li><a href="../accueil/accueil.js#tendance">Tendance</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="connexion">
+            <h1>Se Connecter</h1>
+            <h2>"Adieu la galère, bonjour le sang des nerfs!"</h2>
+            <div class="connexion-form">
+                <div>
+                    <img
+                        src="../../assets/images/Capture_decran_photopea_pour_se_connecter_.png"
+                        alt="NEOM">
+                </div>
+                <form id="connexion-form" action="#">
+                    <div>
+                        <label for="connexion-nom">Username</label>
+                        <input type="text" name="connexion-nom"
+                            id="connexion-nom">
+                    </div>
+                    <div>
+                        <label for="connexion-password">Mot de passe</label>
+                        <input type="password" name="connexion-password"
+                            id="connexion-password">
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="connexion-remember"
+                                id="connexion-remember">
+                            <label class="remember-label"
+                                for="connexion-remember">Remember me</label>
+                        </div>
+                        <div>
+                            <a href="#">Mot de passe oublié</a>
+                        </div>
+                    </div>
+                    <input class="submit-button" type="submit"
+                        value="Se connecter">
+                    <a class="inscription-link"
+                        href="../inscription/index.html">S'inscrire</a>
+                </form>
+            </div>
+            <h2>
+                "Plus de disputes, juste des débats enjoués! 
+                Notre appli de streaming intguitive rapproche les coeurs et détend les esprits."
+            </h2>
+        </section>
+        <section id="inscription">
+            <h1>Inscription</h1>
+            <div class="inscription-form">
+                <form id="inscription-form" action="#">
+                    <div>
+                        <label for="inscription-nom">Username</label>
+                        <input type="text" name="inscription-nom"
+                            id="inscription-nom">
+                    </div>
+                    <div>
+                        <label for="inscription-mail">Email</label>
+                        <input type="email" name="inscription-mail"
+                            id="inscription-mail">
+                    </div>
+                    <div>
+                        <label for="inscription-password">Mot de passe</label>
+                        <input type="password" name="inscription-password"
+                            id="inscription-password">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="inscription-condition"
+                            id="inscription-condition">
+                        <label class="condition-label"
+                            for="inscription-condition">J'accepte les
+                            conditions d'utilisation</label>
+                    </div>
+                    <div>
+                        <input type="submit" class="submit-button"
+                            value="S'inscrire">
+                        <a class="connexion-link"
+                            href="../connexion/index.html">Se connecter</a>
+                    </div>
+                </form>
+                <div>
+                    <img
+                        src="../../assets/images/giphy_9.gif"
+                        alt="NEOM creator">
+                </div>
+            </div>
+            <h2>
+                <span class="poppins">Mood</span> <span class="pixel-sans">Delivery</span>
+            </h2>
+            <h2>Le streaming qui vous surprend par son efficacité !</h2>
+        </section>
+        <section id="contact">
+            <h2 class="contact-subtitle">
+                "Laissez votre instinct guide votre divertissement, 
+                avec <span class="poppins">Mood</span> <span class="pixel-sans">Delivery</span>."
+            </h2>
+            <h1>Nous contacter</h1>
+            <div class="contact-form">
+                <form id="contact-form" action="#">
+                    <div>
+                        <label for="contact-nom">Nom</label>
+                        <input type="text" name="contact-nom"
+                            id="contact-nom">
+                    </div>
+                    <div>
+                        <label for="contact-mail">Email</label>
+                        <input type="email" name="contact-mail"
+                            id="contact-mail">
+                    </div>
+                    <div>
+                        <label for="contact-sujet">Sujet</label>
+                        <select name="contact-sujet" id="contact-sujet">
+                            <option value>Choisissez une option</option>
+                            <option value="alpha">Alpha</option>
+                            <option value="beta">Beta</option>
+                            <option value="gamma">Gamma</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="contact-boite">Boîte</label>
+                        <textarea name="contact-boite" id="contact-boite"
+                            cols="22" rows="10"></textarea>
+                    </div>
+                    <input class="submit-button" type="submit"
+                        value="Envoyer">
+                </form>
+                <div>
+                    <img
+                        src="../../assets/images/nouscontacter.png"
+                        alt="NEOM creator">
+                </div>
+            </div>
+            <h2 class="contact-subtitle">"Rien de plus facile, rien de plus efficace."</h2>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">EULA</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
