@@ -90,6 +90,7 @@ section {
   justify-content: center;
   align-items: center;
   row-gap: 40px;
+  /*padding-top:10px;*/
 }
 
 .nav-logo {
@@ -201,7 +202,7 @@ label {
 .inscription-form img {
   width: 30vw;
   height: 50vh;
-  background-size: cover;
+  background-size: contain;
 }
 
 .inscription-form label {
@@ -307,5 +308,77 @@ input[type="email"],
 select,
 textarea {
   background-color: #8918ce;
+  color: color-mix(in srgb, #24c652, #accc6c);
+}
+
+.sliderwrapper .imageListe {
+  display: grid;
+  gap: 18px;
+  font-size: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.sliderwrapper .imageListe::-webkit-scrollbar{
+  display: none;
+}
+
+.sliderwrapper .imageListe .image-items{
+  width: 325px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.imageListe{
+  min-height: 78vh;
+}
+
+.boiteTendance{
+  max-width: 1200px;
+  width: 95%;
+}
+
+.sliderwrapper{
+  position: relative;
+}
+
+.sliderwrapper .slide-button{
+  position: absolute;
+  top: 32%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #000;
+  font-size: 2.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.sliderwrapper .slide-button:hover{
+  background: #444;
+}
+
+.sliderwrapper .slide-button#prev-slide{
+  left: -20px;
+  display: none;
+}
+
+.sliderwrapper .slide-button#next-slide{
+  right: -20px;
+}
+
+.poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+.pixel-sans{
+  font-family: "Pixelify Sans", cursive;
+}
+
+.contact-subtitle{
   color: color-mix(in srgb, #24c652, #accc6c);
 }
