@@ -84,7 +84,7 @@ section {
 }
 
 .nav-logo {
-  width: 25px;
+  width: 40px;
   height: auto;
 }
 
@@ -110,11 +110,6 @@ h1{
 
 .genre-button:hover{
   text-decoration: underline #131313 1px;
-}
-
-.genre-button:active{
-  background-color: #131313;
-  color: #d9d9d9;
 }
 
 .choice-button{
@@ -201,4 +196,9 @@ h3{
   align-items: center;
   gap:20px 20px;
   width:80vw;
+}
+
+.hidden-checkbox:checked+.genre-button{
+  background-color: #131313;
+  color: #d9d9d9;
 }

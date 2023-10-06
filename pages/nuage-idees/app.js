@@ -17,6 +17,18 @@ function createGenreButton(genre){
     button.classList.add("genre-button");
     button.textContent=genre;
     button.addEventListener("click",e=>{
+        if(button.style.backgroundColor=="rgb(217, 217, 217)"){
+            button.style.backgroundColor="rgb(217,217,217)";
+            button.style.color = "rgb(19,19,19)";
+            console.log("first change" + button.style.backgroundColor + " " +button.style.color);
+        }
+        else{
+            button.style.backgroundColor="rgb(19,19,19)";
+            button.style.color = "rgb(217,217,217)";
+            console.log("second change" + button.style.backgroundColor + " " +button.style.color);
+        }
+        //button.style.backgroundColor=button.style.backgroundColor==="#d9d9d9"?"black":"#d9d9d9";
+        
         movieListFiltered=movieListFiltered.filter(movie=>movie.genres.includes(genre));
         console.log(movieListFiltered);
         if(!genreResult.includes(genre)){
