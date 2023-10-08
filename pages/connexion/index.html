@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
-</head>
-<body>
-    <header>
-        <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lexend&family=Pixelify+Sans&family=Poppins&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <title>Connexion</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="nav-logo"
+                                src="../../assets/images/LogoF.png"
+                                alt="logo navigation">
+                        </a>
+                    </li>
+                    <li><a href="../accueil/index.html">Accueil</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#connexion">Se connecter</a></li>
+                    <li><a href="../inscription/index.html">S'inscrire</a></li>
+                    <li><a href="../tendance/index.html">Tendance</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="connexion">
+                <h1>Se Connecter</h1>
+                <h2>"Adieu la galère, bonjour le sang des nerfs!"</h2>
+                <div class="connexion-form">
+                    <div>
+                        <img
+                            src="../../assets/images/forms/Capture_decran_photopea_pour_se_connecter_.png"
+                            alt="NEOM">
+                    </div>
+                    <form id="connexion-form" action="#">
+                        <div>
+                            <label for="connexion-nom">Username</label>
+                            <input type="text" name="connexion-nom"
+                                id="connexion-nom">
+                        </div>
+                        <div>
+                            <label for="connexion-password">Mot de passe</label>
+                            <input type="password" name="connexion-password"
+                                id="connexion-password">
+                        </div>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="connexion-remember"
+                                    id="connexion-remember">
+                                <label class="remember-label"
+                                    for="connexion-remember">Remember me</label>
+                            </div>
+                            <div>
+                                <a href="#">Mot de passe oublié</a>
+                            </div>
+                        </div>
+                        <input class="submit-button" type="submit"
+                            value="Se connecter">
+                        <a class="inscription-link"
+                            href="../inscription/index.html">S'inscrire</a>
+                    </form>
+                </div>
+                <h2>
+                    "Plus de disputes, juste des débats enjoués!
+                    Notre appli de streaming intguitive rapproche les coeurs et
+                    détend les esprits."
+                </h2>
+            </section>
+        </main>
+        <footer>
             <ul>
                 <li>
-                    <a href="#">
-                        <img class="nav-logo"
-                            src="../../assets/images/LogoF.png"
-                            alt="logo navigation">
-                    </a>
+                    <a href="#">EULA</a>
                 </li>
-                <li><a href="../accueil/index.html">Accueil</a></li>
             </ul>
-            <ul>
-                <li><a href="#connexion">Se connecter</a></li>
-                <li><a href="#inscription">S'inscrire</a></li>
-                <li><a href="../accueil/accueil.js#tendance">Tendance</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="connexion">
-            <h1>Se Connecter</h1>
-            <h2>"Adieu la galère, bonjour le sang des nerfs!"</h2>
-            <div class="connexion-form">
-                <div>
-                    <img
-                        src="../../assets/images/Capture_decran_photopea_pour_se_connecter_.png"
-                        alt="NEOM">
-                </div>
-                <form id="connexion-form" action="#">
-                    <div>
-                        <label for="connexion-nom">Username</label>
-                        <input type="text" name="connexion-nom"
-                            id="connexion-nom">
-                    </div>
-                    <div>
-                        <label for="connexion-password">Mot de passe</label>
-                        <input type="password" name="connexion-password"
-                            id="connexion-password">
-                    </div>
-                    <div>
-                        <div>
-                            <input type="checkbox" name="connexion-remember"
-                                id="connexion-remember">
-                            <label class="remember-label"
-                                for="connexion-remember">Remember me</label>
-                        </div>
-                        <div>
-                            <a href="#">Mot de passe oublié</a>
-                        </div>
-                    </div>
-                    <input class="submit-button" type="submit"
-                        value="Se connecter">
-                    <a class="inscription-link"
-                        href="../inscription/index.html">S'inscrire</a>
-                </form>
-            </div>
-            <h2>
-                "Plus de disputes, juste des débats enjoués! 
-                Notre appli de streaming intguitive rapproche les coeurs et détend les esprits."
-            </h2>
-        </section>
-    </main>
-    <footer>
-        <ul>
-            <li>
-                <a href="#">EULA</a>
-            </li>
-        </ul>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

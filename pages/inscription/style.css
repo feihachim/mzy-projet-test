@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+input[type="submit"] {
+  font-family: "Pixelify Sans", cursive;
+}
+
+h1,
+h2 {
+  font-family: "Lexend", sans-serif;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url("../../assets/images/imagefond.png");
+  background-size: cover;
+}
+
+nav {
+  width: 100vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header,
+footer,
+nav {
+  background-color: #500f77;
+}
+
+label,
+.submit-button,
+h1 {
+  color: color-mix(in srgb, #24c652, #accc6c);
+}
+
+a {
+  color: color-mix(in srgb, #24c652, #accc6c);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover {
+  color: color-mix(in srgb, #24c652, #fcfcfc);
+  text-decoration: underline color-mix(in srgb, #24c652, #fcfcfc) 2px;
+}
+
+a:active {
+  color: color-mix(in srgb, #24c652, #fcfcfc);
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  /*padding-top:10px;*/
+}
+
+.nav-logo {
+  width: 40px;
+  height: auto;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.inscription-form {
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+}
+
+.inscription-form form {
+  width: 30vw;
+  height: 50vh;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  background-color: #4f1e75;
+}
+
+.inscription-form img {
+  width: 30vw;
+  height: 50vh;
+  background-size: contain;
+}
+
+.inscription-form label {
+  width: 120px;
+}
+
+#inscription-form div {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+#inscription-form .submit-button,
+.connexion-link {
+  width: 155px;
+  height: 28px;
+  border-radius: 10px;
+}
+
+#inscription-form .submit-button {
+  background-color: #3b115d;
+}
+
+#inscription-form input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: #8918ce;
+  color: color-mix(in srgb, #24c652, #accc6c);
+  width: 218px;
+  height: 43px;
+  border-radius: 10px;
+}
+
+#inscription-form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #8918ce;
+}
+
+#inscription-form .connexion-link {
+  background-color: #8918ce;
+  text-align: center;
+  line-height: 27px;
+}
+
+#inscription-form .condition-label {
+  width: 290px;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.pixel-sans {
+  font-family: "Pixelify Sans", cursive;
+}
+
+h2 {
+  color: color-mix(in srgb, #24c652, #accc6c);
+}
