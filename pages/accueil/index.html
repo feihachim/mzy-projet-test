@@ -9,7 +9,7 @@
             href="https://fonts.googleapis.com/css2?family=Lexend&family=Pixelify+Sans&family=Poppins&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
-        <script src="./accueil.js" defer></script>
+        <script src="./app.js" defer></script>
         <title>Accueil </title>
     </head>
     <body>
@@ -39,15 +39,101 @@
         </header>
         <main>
             <section id="accueil">
-                <h1>Mood Delivery</h1>
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem tenetur harum quo placeat! Eius aperiam, tenetur
-                    exercitationem animi laborum commodi.
-                </h2>
-                <div>
-                    <a href="../questionnaire/index.html">Questionnaire</a>
-                    <a href="../nuage-idees/index.html">Nuage d'idées</a>
+                <div class="contenu">
+
+                    <div class="contenuTitres">
+                        <center>
+
+                            <h1 class="titre">Mood Delivery</h1>
+
+                        </center>
+                    </div>
+
+                    <div class="boutons">
+
+                        <a href="../questionnaire/index.html">
+                            <button class="bquestionnaire">questionnaire</button>
+                        </a>
+
+                        <a href="../nuage-idees/index.html">
+                            <button class="nuage">nuage de mots</button>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="landingbox">
+
+                    <div class="box1" onmouseover="changecouleur()"
+                        onmouseout="outcouleur()">
+
+                        <p class="texteL">Plongez dans l'univers du streaming,<br>
+                            votre dose de divertissement infinie !</p>
+
+                    </div>
+
+                    <div class="box2">
+
+                        <center><img
+                                src="../../assets/images/accueil/photoLandingPage.jpg"
+                                alt="MoodDelivery1"></center>
+
+                    </div>
+
+                </div>
+
+                <div class="texteComment">
+
+                    <center>
+                        <h1 class="comment">Comment ça marche ?</h1>
+                        <h2 class="bref">passe ta souris sur les images</h2>
+                    </center>
+
+                </div>
+
+                <div class="partie2">
+
+                    <div class="box3">
+                        <img src="../../assets/images/accueil/cmt1.gif"
+                            alt="comment1" class="cmt1">
+                        <div class="overlay">
+                            <div class="textBox3">"Qu'est-ce que je regarde ce soir ?"</div>
+                        </div>
+                    </div>
+
+                    <div class="box4">
+                        <img src="../../assets/images/LogoF.png" alt="comment2"
+                            class="cmt2">
+                        <div class="overlay2">
+                            <div class="textBox4">"J'utilise Mood Delivery."</div>
+                        </div>
+                    </div>
+
+                    <div class="box5">
+                        <img src="../../assets/images/accueil/cmt2.png"
+                            alt="comment3" class="cmt3">
+                        <div class="overlay3">
+                            <div class="textBox5">"Je réponds au questionnaire."</div>
+                        </div>
+                    </div>
+
+                    <div class="box6">
+                        <img src="../../assets/images/accueil/cmt3.gif"
+                            alt="comment4" class="cmt4">
+                        <div class="overlay4">
+                            <div class="textBox6">"Mood Delivery me propose de regarder un film ou une série qui correspond à mes attentes."</div>
+                        </div>
+                    </div>
+
+                    <div class="box7">
+                        <img src="../../assets/images/accueil/cmt4.gif"
+                            alt="comment5" class="cmt5">
+                        <div class="overlay5">
+                            <div class="textBox7">"Je suis content et satisfait !"</div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </main>

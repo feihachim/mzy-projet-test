@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Lexend&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,23 +12,57 @@ html {
 }
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-#splash-screen {
-  background-image: url("./assets/images/223.jpg");
-}
-
-#splash-screen {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  background-image: url("./assets/images/imagefond.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
+}
+
+.boutonStart {
+  padding-top: 2rem;
+}
+
+.bouton {
+  position: relative;
+  margin: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.bouton a {
+  color: white;
+  font-family: "Pixelify Sans", cursive;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #acc66c;
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+
+  text-shadow: 0px 1px 0px #000;
+  box-shadow: inset 0 1px 0 #d4e4d9, 0 10px 0 #69966d;
+  border-radius: 100px;
+}
+
+.bouton a:active {
+  top: 10px;
+  background-color: #6c7e3e;
+}
+
+.bouton:after {
+  content: "";
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 100px;
+}
+
+.texte {
+  font-family: "Croissant One", cursive;
+  font-size: 30px;
+  color: #acc66c;
+  filter: drop-shadow(5px 2px 10px rgb(168, 194, 164));
 }
