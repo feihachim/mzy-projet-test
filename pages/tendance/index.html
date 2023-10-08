@@ -8,9 +8,11 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Lexend&family=Pixelify+Sans&family=Poppins&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="./style.css">
-        <script src="./accueil.js" defer></script>
-        <title>Accueil </title>
+        <script src="./app.js" defer></script>
+        <title>Tendance</title>
     </head>
     <body>
         <header>
@@ -26,28 +28,47 @@
                     <li><a href="#accueil">Accueil</a></li>
                 </ul>
                 <ul>
-                    <li>
-                        <a href="../forms-pages/index.html#connexion">
-                            Se connecter
-                        </a>
-                    </li>
+                    <li><a href="../forms-pages/index.html#connexion">Se
+                            connecter</a></li>
                     <li><a href="../forms-pages/index.html#inscription">S'inscrire</a></li>
-                    <li><a href="../tendance/index.html#tendance">Tendance</a></li>
+                    <li><a href="#tendance">Tendance</a></li>
                     <li><a href="../forms-pages/index.html#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="accueil">
-                <h1>Mood Delivery</h1>
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem tenetur harum quo placeat! Eius aperiam, tenetur
-                    exercitationem animi laborum commodi.
-                </h2>
-                <div>
-                    <a href="../questionnaire/index.html">Questionnaire</a>
-                    <a href="../nuage-idees/index.html">Nuage d'idées</a>
+            <section id="tendance">
+                <h1>Tendance</h1>
+                <div class="boiteTendance">
+                    <div class="sliderwrapper">
+                        <button id="prev-slide"
+                            class="slide-button material-symbols-outlined">chevron_left</button>
+                        <div class="imageListe">
+                            <img src="../../assets/images/tendance/affiche1.jpg"
+                                alt="afficheParasite" class="image-items">
+                            <img src="../../assets/images/tendance/affiche2.jpg"
+                                alt="afficheEEAAO" class="image-items">
+                            <img src="../../assets/images/tendance/affiche3.jpg"
+                                alt="afficheHercule" class="image-items">
+                            <img src="../../assets/images/tendance/affiche4.jpg"
+                                alt="afficheAvengers" class="image-items">
+                            <img src="../../assets/images/tendance/affiche5.jpg"
+                                alt="afficheRicksawRidge" class="image-items">
+                            <img src="../../assets/images/tendance/affiche6.jpg"
+                                alt="afficheHungerGames" class="image-items">
+                            <img src="../../assets/images/tendance/affiche7.jpg"
+                                alt="afficheMoving" class="image-items">
+                            <img src="../../assets/images/tendance/affiche8.jpg"
+                                alt="afficheOnePiece" class="image-items">
+                            <img src="../../assets/images/tendance/affiche9.jpg"
+                                alt="afficheUmbrellaAcademy" class="image-items">
+                            <img
+                                src="../../assets/images/tendance/affiche10.jpg"
+                                alt="afficheHaikyuu" class="image-items">
+                        </div>
+                        <button id="next-slide"
+                            class="slide-button material-symbols-outlined">chevron_right</button>
+                    </div>
                 </div>
             </section>
         </main>

@@ -13,7 +13,8 @@ input[type="submit"] {
   font-family: "Pixelify Sans", cursive;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: "Lexend", sans-serif;
 }
 
@@ -42,7 +43,8 @@ nav {
 }
 
 header,
-footer,nav {
+footer,
+nav {
   background-color: #500f77;
 }
 
@@ -311,74 +313,14 @@ textarea {
   color: color-mix(in srgb, #24c652, #accc6c);
 }
 
-.sliderwrapper .imageListe {
-  display: grid;
-  gap: 18px;
-  font-size: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  grid-template-columns: repeat(10, 1fr);
-}
-
-.sliderwrapper .imageListe::-webkit-scrollbar{
-  display: none;
-}
-
-.sliderwrapper .imageListe .image-items{
-  width: 325px;
-  height: 450px;
-  object-fit: cover;
-}
-
-.imageListe{
-  min-height: 78vh;
-}
-
-.boiteTendance{
-  max-width: 1200px;
-  width: 95%;
-}
-
-.sliderwrapper{
-  position: relative;
-}
-
-.sliderwrapper .slide-button{
-  position: absolute;
-  top: 32%;
-  height: 50px;
-  width: 50px;
-  color: #fff;
-  border: none;
-  outline: none;
-  background-color: #000;
-  font-size: 2.2rem;
-  cursor: pointer;
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-
-.sliderwrapper .slide-button:hover{
-  background: #444;
-}
-
-.sliderwrapper .slide-button#prev-slide{
-  left: -20px;
-  display: none;
-}
-
-.sliderwrapper .slide-button#next-slide{
-  right: -20px;
-}
-
-.poppins{
+.poppins {
   font-family: "Poppins", sans-serif;
 }
 
-.pixel-sans{
+.pixel-sans {
   font-family: "Pixelify Sans", cursive;
 }
 
-h2{
+h2 {
   color: color-mix(in srgb, #24c652, #accc6c);
 }
