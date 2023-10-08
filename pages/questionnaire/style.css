@@ -13,11 +13,14 @@ input[type="submit"] {
   font-family: "Pixelify Sans", cursive;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Lexend", sans-serif;
 }
 
-label {
+label,
+footer li {
   font-family: "Poppins", sans-serif;
 }
 
@@ -105,4 +108,28 @@ h1 {
   width: 100%;
   height: 100%;
   background-size: cover;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  width: 60vw;
+}
+
+footer ul {
+  display: block;
+}
+
+footer li {
+  color: color-mix(in srgb, #24c652, #accc6c);
 }

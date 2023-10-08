@@ -14,11 +14,13 @@ input[type="submit"] {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Lexend", sans-serif;
 }
 
-label {
+label,
+footer li {
   font-family: "Poppins", sans-serif;
 }
 
@@ -172,5 +174,29 @@ textarea {
 }
 
 h2 {
+  color: color-mix(in srgb, #24c652, #accc6c);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  width: 60vw;
+}
+
+footer ul {
+  display: block;
+}
+
+footer li {
   color: color-mix(in srgb, #24c652, #accc6c);
 }
