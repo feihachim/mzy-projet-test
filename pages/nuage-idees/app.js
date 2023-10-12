@@ -9,8 +9,6 @@ const genreListBox = document.querySelector(".genre-list");
 const choiceButton = document.querySelector(".choice-button");
 const movieCardList = document.querySelector(".movie-list");
 
-// TODO nuage idee logique et display resultat
-
 function createGenreButton(genre) {
   const button = document.createElement("div");
   button.classList.add("genre-button");
