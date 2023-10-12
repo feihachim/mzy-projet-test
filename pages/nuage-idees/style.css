@@ -101,14 +101,20 @@ h1 {
 }
 
 .genre-button {
-  background-color: #d9d9d9;
-  color: #131313;
+  background-color: #8918ce;
+  color: #accc6c;
   font-size: 20px;
   width: 184px;
   height: 31px;
+  border: 1px solid #03f0ff;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
+}
+
+.clicked {
+  background-color: #accc6c;
+  color: #8918ce;
 }
 
 .genre-button,
@@ -117,7 +123,7 @@ h1 {
 }
 
 .genre-button:hover {
-  text-decoration: underline #131313 1px;
+  text-decoration: underline #accc6c 2px;
 }
 
 .choice-button {
@@ -204,11 +210,6 @@ h3 {
   align-items: center;
   gap: 20px 20px;
   width: 80vw;
-}
-
-.hidden-checkbox:checked + .genre-button {
-  background-color: #131313;
-  color: #d9d9d9;
 }
 
 footer {
