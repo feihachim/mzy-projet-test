@@ -21,7 +21,7 @@ function createGenreButton(genre) {
       e.target.classList.remove("clicked");
       const indexGenre = genreResult.indexOf(genre);
       const x = genreResult.splice(indexGenre, 1);
-      // genreResult = genreResult.filter((genreItem) => genreItem != genre);
+
       console.log("removed " + genre);
       console.log("liste " + genreResult);
     } else {
@@ -31,16 +31,6 @@ function createGenreButton(genre) {
       }
       console.log("added " + genre);
       console.log("liste " + genreResult);
-    }
-    //button.style.backgroundColor=button.style.backgroundColor==="#d9d9d9"?"black":"#d9d9d9";
-
-    movieListFiltered = movieListFiltered.filter((movie) =>
-      movie.genres.includes(genre)
-    );
-    console.log(movieListFiltered);
-    if (!genreResult.includes(genre)) {
-      genreResult.push(genre);
-      console.log(genreResult);
     }
   });
   genreListBox.appendChild(button);
@@ -94,6 +84,10 @@ function createNoResultItem() {
 
 function displayResults() {
   choiceButton.addEventListener("click", (e) => {
+    movieListFiltered = movieListFiltered.filter((movie) =>
+      genreResult.every((item) => movie.genres.includes(item))
+    );
+    console.log(movieListFiltered);
     if (movieListFiltered.length > 1) {
       movieListFiltered.map((movie) => createCardListItem(movie));
     } else if (movieListFiltered.length === 1) {
